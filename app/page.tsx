@@ -1,8 +1,8 @@
 'use client'
 import React, { useEffect, useState } from 'react';
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Content from "./components/content";
+import Header from "./Header";
+import Footer from "./Footer";
+import Content from "./content";
 import Links from "./components/links/links";
 
 export default function Home() {
@@ -29,7 +29,7 @@ export default function Home() {
   return (
     <main data-theme="light">
       {/* Header */}
-      <Header />
+    
 
       {/* Content and Links */}
       <div style={{ display: "flex" }} className="link-content">
@@ -50,7 +50,7 @@ export default function Home() {
       </div>
 
       {/* Footer */}
-      <Footer />
+     
 
       {/* Styles */}
       <style jsx>{`

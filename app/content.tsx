@@ -1,13 +1,13 @@
-import ApplyLink from "./job/ApplyLink";
-import Designation from "./job/Designation";
-import HiringDetails from "./job/HiringDetails";
-import HowToApply from "./job/HowtoApply";
-import Qualification from "./job/Qualification";
-import Responsibility from "./job/Responsibilities";
-import Responsibilities from "./job/Responsibilities:";
-import Role from "./job/Role";
-import SkillRequirement from "./job/SkillRequirement";
-import JobSummary from "./job/jobSummary";
+import ApplyLink from "./components/job/ApplyLink";
+import Designation from "./components/job/Designation";
+import HiringDetails from "./components/job/HiringDetails";
+import HowToApply from "./components/job/HowtoApply";
+import Qualification from "./components/job/Qualification";
+import Responsibility from "./components/job/Responsibilities";
+import Responsibilities from "./components/job/Responsibilities:";
+import Role from "./components/job/Role";
+import SkillRequirement from "./components/job/SkillRequirement";
+import JobSummary from "./components/job/jobSummary";
 
 const Content = () => {
   return (

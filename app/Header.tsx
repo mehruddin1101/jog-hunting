@@ -3,6 +3,7 @@ import { Fragment, useState } from 'react'
 import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
 import { ArrowPathIcon, Bars3Icon, ChartPieIcon, CursorArrowRaysIcon, FingerPrintIcon, SquaresPlusIcon, XMarkIcon, } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
+import Link from 'next/link'
 
 const products: any[] = [
   { name: 'Internship', description: 'Get Training ', href: '#', icon: ChartPieIcon },
@@ -31,7 +32,9 @@ const Header = () => {
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
             {/* <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" /> */}
-            <h1 style={{color:"green"}}>  JOB HUNTING</h1>
+
+            <Link   style={{color:"green"}}  href="/" className="link link-hover">JOB HUNTING</Link>
+            <h1>  </h1>
           </a>
         </div>
         <div className="flex lg:hidden">

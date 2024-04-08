@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+
 import "./globals.css";
+import Header from "./Header";
+import Footer from "./Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +19,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        {/* <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} /> */}
+        {/* Add any other necessary meta tags or links here */}
+      </head>
+      <body className={inter.className}>
+        <Header /> {/* Add the Header component */}
+        <main>{children}</main>
+        <Footer /> {/* Add the Footer component */}
+      </body>
     </html>
   );
 }

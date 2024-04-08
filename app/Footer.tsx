@@ -1,9 +1,11 @@
+import Link from "next/link";
+
 const Footer = () => {
   return (
     <>
       <footer  className="footer footer-center p-10 bg-base-200 text-base-content rounded footer-postion" data-theme="light">
         <nav className="grid grid-flow-col gap-4">
-          <a className="link link-hover">About us</a>
+          <Link   href="/about" className="link link-hover">About us</Link>
           <a className="link link-hover">Contact</a>
           <a className="link link-hover">Jobs</a>
           <a className="link link-hover">Press kit</a>
