@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function About() {
   return (
-    <div className="about-page p-8" style={{color:'white'}}>
+    <div className="about-page p-8" style={{color:'black'}} data-theme="light">
 
       <h1 className="text-4xl font-bold mb-4">Welcome to Our Company</h1>
       <p className="text-lg mb-6 p-2">
