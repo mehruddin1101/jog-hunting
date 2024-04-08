@@ -2,32 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+/* Media query for screens smaller than 768px */
+.container{
+  margin:5rem
+
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@media (max-width: 756px) {
+  .link-content { /* Class for container element */
+    display: flex;
+    flex-direction: column; 
+    width:100% ;
+    margin: 0;
+  }.container{
+    margin:0
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+
+
+.content {
+  flex: 1;
+  margin: 5rem 10rem;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.links {
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+
+.roleBanner {
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.roleTitle {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.roleSubtitle {
+  font-size: 1.5em;
+}
+
+
+.responsibilities {
+  background-color: linear-gradient(to right, #0044b3, #0066ff);
+  /* color: #fff; */
+  color: black;
+  border-radius: 0.6rem;
+}
+.background{
+  background-color:'1DA8FF !important'
 }
