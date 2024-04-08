@@ -4,7 +4,7 @@ const links = [
     { title: "Apply Link Fullstack", href: "link_to_fullstack" },
     { title: "Apply Link Data Engineer", href: "link_to_data_engineer" },
     { title: "Apply Link DevOps Engineer", href: "link_to_devops_engineer" },
-    { title: "Click Here to Join WhatsApp Group", href: "link_to_whatsapp_group" }
+    { title: "Click Here to Join WhatsApp Group", href: "https://chat.whatsapp.com/B9CPqLz6lQF5jMPUSLxw9I" }
 ];
 
 const ApplyLink = () => {
