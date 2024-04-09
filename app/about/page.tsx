@@ -1,5 +1,6 @@
 import React from 'react';
-
+import Image1 from '../assets/img1.jpeg'
+import {data} from '../assets/data'
 export default function About() {
   return (
     <div className="about-page p-8" style={{color:'black'}} data-theme="light">
@@ -31,11 +32,14 @@ export default function About() {
       </p>
       <div className="carousel carousel-end rounded-box" data-theme="light">
         <div className="carousel-item">
-          <img
-            src="https://daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg"
-            alt="Drink"
-            className="rounded"
-          />
+          {
+            data.map((data:any)=> <img
+            src={data.url} 
+          alt="Drink"
+          className="rounded"
+        />)
+          }
+        
         </div>
         <div className="carousel-item">
           <img
